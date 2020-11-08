@@ -123,6 +123,7 @@ func accountcreate() {
 func takeconsult() {
 	var choose string
 	fmt.Println("Welcome to our travel agency. What do you want to know?")
+	fmt.Println()
 	fmt.Println("Information about tickets(information)")
 	fmt.Println("Ticket prices(prices)")
 	fmt.Println("Contact numbers(contact)")
@@ -131,11 +132,11 @@ func takeconsult() {
 	fmt.Println("Select: ")
 	fmt.Scan(&choose)
 	if choose == "information" || choose == "Information" {
-
+		getInformation()
 	} else if choose == "prices" || choose == "Prices" {
-
+		getInformation()
 	} else if choose == "contact" || choose == "Contact" {
-
+		getInformation()
 	} else if choose == "Back" || choose == "back" {
 		menu()
 	} else {

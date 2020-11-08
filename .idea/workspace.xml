@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32f86ee9-5410-49c4-ba97-c722eaa55b10" name="Default Changelist" comment="Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/Builder.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/Builder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/CheinOfResp.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/CheinOfResp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1k1KwKMWN5GGyOin3NivDy5ZzQ5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Zangar\go\src\Golang\main" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="go build Golang/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Golang" />
@@ -15,5 +48,39 @@
         <item itemvalue="Go Build.go build Golang/main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1323" height="567" key="GridCell.Tab.0.bottom" timestamp="1604864065901">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="567" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604864065901" />
+    <state width="1323" height="567" key="GridCell.Tab.0.center" timestamp="1604864065901">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="567" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604864065901" />
+    <state width="1323" height="567" key="GridCell.Tab.0.left" timestamp="1604864065901">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="567" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604864065901" />
+    <state width="1323" height="567" key="GridCell.Tab.0.right" timestamp="1604864065901">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="567" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604864065901" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604863181744">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604863181744" />
+    <state x="484" y="273" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604863162929">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="273" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604863162929" />
   </component>
 </project>

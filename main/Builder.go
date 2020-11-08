@@ -156,7 +156,7 @@ func getOnlineTickets() {
 	var text string
 	fmt.Scan(&text)
 	if text == "Back" || text == "back" {
-		menu()
+		typesOfTickets()
 	} else if text == "Buy" || text == "buy" {
 		fmt.Println()
 		fmt.Printf("Price: %d$\n", onlineTicket.price)
@@ -186,7 +186,7 @@ func getAdvancedTickets() {
 	var text string
 	fmt.Scan(&text)
 	if text == "Back" || text == "back" {
-		menu()
+		typesOfTickets()
 	} else if text == "Buy" || text == "buy" {
 		fmt.Println()
 		fmt.Printf("Price: %d$\n", advancedTicket.price)
@@ -216,7 +216,7 @@ func getStandardTickets() {
 	var text string
 	fmt.Scan(&text)
 	if text == "Back" || text == "back" {
-		menu()
+		typesOfTickets()
 	} else if text == "Buy" || text == "buy" {
 		fmt.Println()
 		fmt.Printf("Price: %d$\n", standardTicket.price)

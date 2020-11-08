@@ -11,12 +11,10 @@ type client struct {
 	getPrice            bool
 	connectWithOperator bool
 }
-
 type department interface {
 	execute(*client)
 	setNext(department)
 }
-
 type reception struct {
 	next department
 }
@@ -31,7 +29,6 @@ func (r *reception) execute(p *client) {
 	p.registrationDone = true
 	r.next.execute(p)
 }
-
 func (r *reception) setNext(next department) {
 	r.next = next
 }
@@ -46,13 +43,12 @@ func (d *getConsult) execute(p *client) {
 		d.next.execute(p)
 		return
 	}
-	fmt.Println("1 Online ticket:sightseeing with guide,information book")
-	fmt.Println("2 Economy ticket:sightseeing with guide,trips to Astana,Almaty each cities for three days")
-	fmt.Println("3 Advanced ticket:sightseeing with guide,trip to Astana,Almaty and you will choose one city ,includes:3 times meals,flight's ticket,accommodation each for three days ")
+	fmt.Println("1 Online ticket:It includes online-life tour and material about sightseeing in Kazakhstan,4 hours")
+	fmt.Println("2 Standard ticket:Standard includes trip to Astana and Almaty, for 3 days and attempting 5 sightseeing in each city with guide, 3 days")
+	fmt.Println("3 Advanced ticket:Standard includes trip to Astana and Almaty, for 5 days and attempting those place,which you want to see with guide,5 days ")
 	p.getConsult = true
 	d.next.execute(p)
 }
-
 func (d *getConsult) setNext(next department) {
 	d.next = next
 }
@@ -68,9 +64,9 @@ func (m *price) execute(p *client) {
 		return
 	}
 	fmt.Println("Prices:")
-	fmt.Println("Online ticket:5000 tenge")
-	fmt.Println("Economy ticket:8000 tenge")
-	fmt.Println("Advanced ticket:12000 tenge")
+	fmt.Println("Online ticket:15$")
+	fmt.Println("Standard ticket:150$ ")
+	fmt.Println("Advanced ticket:350$ ")
 	p.getPrice = true
 	m.next.execute(p)
 }
@@ -91,7 +87,27 @@ func (c *moreInformation) execute(p *client) {
 	fmt.Println("87022356512")
 	fmt.Println("87473586598")
 	fmt.Println("Have a nice trip!")
+	var choose string
+	fmt.Scan(&choose)
+	if choose == "Back" || choose == "back" {
+		fmt.Println()
+		selectMenu("consult")
+	}
 }
 func (c *moreInformation) setNext(next department) {
 	c.next = next
+}
+
+func getInformation() {
+	Client := &moreInformation{}
+	GetTicket := &price{}
+	GetTicket.setNext(Client)
+	GetPrice := &getConsult{}
+	GetPrice.setNext(GetTicket)
+	reception := &reception{}
+	reception.setNext(GetPrice)
+
+	Clients := &client{name: name, city: "Nur-Sultan", country: "Kazakhstan"}
+	reception.execute(Clients)
+
 }
